@@ -1,0 +1,624 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Martel Sans", sans-serif;
+  color: #171717;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.contanier {
+  width: calc(100% - 104px);
+  max-width: 1256px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 7px 0;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 24px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  display: block;
+  max-width: 184px;
+  height: auto;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn-person,
+.header-btn-cart,
+.header-btn-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header-btn-person {
+  margin-right: 18px;
+}
+
+.header-btn-cart {
+  margin-right: 18px;
+}
+
+.header-btn-person img,
+.header-btn-cart img,
+.header-btn-button img {
+  display: block;
+  width: auto;
+  height: 24px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+  background-color: #fff;
+}
+
+.hero-inner {
+  position: relative;
+  min-height: 650px;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero-box {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 536px;
+
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+.hero-title {
+  max-width: 536px;
+  margin-bottom: 48px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.Delivery,
+.Takeout {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 118px;
+  height: 72px;
+  padding: 12px 10px;
+
+  border: 1px solid #ffe145;
+  border-radius: 4px;
+  background-color: #fff;
+
+  font-family: "Martel Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+
+  transition: background-color 0.2s ease;
+}
+
+.button-title {
+  font-weight: 700;
+}
+
+.Delivery:hover,
+.Takeout:hover {
+  background-color: #fff9d9;
+}
+
+
+/* =========================
+   HERO IMAGES
+========================= */
+
+.hero-img {
+  position: absolute;
+  z-index: 1;
+
+  top: -20px;
+  right: 0;
+
+  width: 648px;
+  max-width: 55%;
+  height: auto;
+
+  padding: 0;
+  margin: 0;
+}
+
+.hero-img .plate {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Rucola */
+
+.rucola {
+  position: absolute;
+  z-index: 2;
+
+  top: 58%;
+  left: -85px;
+
+  width: 122px;
+  height: auto;
+}
+
+
+/* Image description */
+
+.descp {
+  position: absolute;
+  z-index: 2;
+
+  right: -5px;
+  bottom: -20px;
+
+  width: 181px;
+  height: auto;
+}
+
+
+/* =========================
+   INFORMATION BAR
+========================= */
+
+.information-bar {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  width: 100%;
+  max-width: 872px;
+  min-height: 104px;
+
+  padding: 16px 0;
+
+  background-color: #fff;
+  box-shadow: 0 8px 40px 0 #00000014;
+}
+
+.box-del {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  flex: 1;
+  min-width: 0;
+}
+
+.box-del img {
+  display: block;
+  flex-shrink: 0;
+
+  width: 36px;
+  height: auto;
+}
+
+.box-del p {
+  width: 185px;
+
+  font-family: "Martel Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   TABLET / REFERENCE SCREEN
+   701px - 900px
+========================= */
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+  .contanier {
+    width: calc(100% - 104px);
+  }
+
+  .header {
+    padding: 7px 0;
+  }
+
+  .hero-inner {
+    min-height: 389px;
+  }
+
+
+  /* Title */
+
+  .hero-box {
+    max-width: 350px;
+    margin-top: 68px;
+    margin-bottom: 0;
+  }
+
+  .hero-title {
+    max-width: 350px;
+    margin-bottom: 48px;
+
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: 1px;
+  }
+
+
+  /* Buttons */
+
+  .hero-buttons {
+    gap: 14px;
+  }
+
+  .Delivery,
+  .Takeout {
+    width: 67px;
+    height: 42px;
+    padding: 4px;
+
+    border: 1px solid #ffe145;
+    border-radius: 0;
+
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .button-title {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+
+  /* Main plate image */
+
+  .hero-img {
+    top: 15px;
+    right: 0;
+
+    width: 400px;
+    max-width: 56%;
+  }
+
+  .hero-img .plate {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* Rucola */
+
+  .rucola {
+    top: 60%;
+    left: -65px;
+    width: 75px;
+  }
+
+
+  /* Description */
+
+  .descp {
+    right: -5px;
+    bottom: -25px;
+    width: 125px;
+  }
+
+
+  /* Bottom information bar */
+
+  .information-bar {
+    gap: 8px;
+
+    width: 496px;
+    max-width: calc(100% + 104px);
+    height: 60px;
+    min-height: 60px;
+
+    margin-left: -52px;
+    padding: 8px 8px 8px 52px;
+  }
+
+  .box-del {
+    flex: 1;
+    gap: 6px;
+  }
+
+  .box-del img {
+    width: 26px;
+  }
+
+  .box-del p {
+    width: 100px;
+
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 0.2px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .contanier {
+    width: calc(100% - 40px);
+  }
+
+
+  /* Header */
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .header-logo img {
+    max-width: 125px;
+  }
+
+  .header-btn-person {
+    margin-right: 8px;
+  }
+
+  .header-btn-cart {
+    margin-right: 8px;
+  }
+
+  .header-btn-person img {
+    width: 48px;
+    height: auto;
+  }
+
+  .header-btn-cart img {
+    width: 24px;
+    height: auto;
+  }
+
+  .header-btn-button img {
+    width: 22px;
+    height: 22px;
+  }
+
+
+  /* Hero layout */
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+
+  /* Title */
+
+  .hero-box {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .hero-title {
+    max-width: 350px;
+    margin-bottom: 28px;
+
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+
+  /* Buttons */
+
+  .hero-buttons {
+    gap: 12px;
+  }
+
+  .Delivery,
+  .Takeout {
+    width: 100px;
+    height: 60px;
+    padding: 8px;
+
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .button-title {
+    font-size: 11px;
+  }
+
+
+  /* Images */
+
+  .hero-img {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 35px;
+  }
+
+  .hero-img .plate {
+    width: 100%;
+    height: auto;
+  }
+
+  .rucola {
+    top: 55%;
+    left: -8px;
+    width: 65px;
+  }
+
+  .descp {
+    right: 0;
+    bottom: -15px;
+    width: 110px;
+  }
+
+
+  /* Information bar */
+
+  .information-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .box-del {
+    width: 100%;
+    flex: auto;
+    gap: 12px;
+  }
+
+  .box-del img {
+    width: 34px;
+  }
+
+  .box-del p {
+    width: auto;
+    max-width: 240px;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+  .header-logo img {
+    max-width: 105px;
+  }
+
+  .header-btn-person img {
+    width: 42px;
+  }
+
+  .header-btn-cart img {
+    width: 22px;
+  }
+
+  .header-btn-person,
+  .header-btn-cart {
+    margin-right: 6px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .Delivery,
+  .Takeout {
+    width: 92px;
+    height: 56px;
+  }
+
+  .information-bar {
+    padding: 16px;
+  }
+}
